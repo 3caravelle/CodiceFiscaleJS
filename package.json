@@ -24,7 +24,7 @@
     "webpack-cli": "^3.3.12"
   },
   "scripts": {
-    "build": "webpack && rename",
+    "build": "webpack && node utils.js",
     "clean": "rm ./example/codice.fiscale.var.js",
     "test": "jest",
     "fix": "standard --fix",
