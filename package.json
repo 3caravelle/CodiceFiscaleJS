@@ -1,5 +1,5 @@
 {
-  "name": "codice-fiscale-js",
+  "name": "@3caravelle/codice-fiscale-js",
   "version": "2.3.24",
   "description": "The Italian Tax Code Library for Javascript and Typescript",
   "main": "dist/codice.fiscale.commonjs2.js",
