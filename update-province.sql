@@ -1,0 +1,4 @@
+SELECT
+  p.SIGLA || ': "' || REPLACE(p.DENOMINAZIONE, '"', '\"') || '",' AS js_row
+FROM DB_NAME.PROVINCIA p
+ORDER BY p.SIGLA;
