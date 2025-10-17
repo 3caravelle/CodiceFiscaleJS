@@ -16,13 +16,13 @@ npm install
 3. Login to your Nexus repository:
 
 ```bash
-npm login --registry=***
+npm login --registry=https://nexus.3caravelle.net/repository/npm-releases/
 ```
 
 4. Publish the package:
 
 ```bash
-npm publish --registry=***
+npm publish --registry=https://nexus.3caravelle.net/repository/npm-releases/
 ```
 
 ## Updating Library Data
@@ -31,8 +31,8 @@ To update the comuni and province JavaScript files with the latest data:
 
 1. Use the provided SQL queries in the following files:
 
-   * `update-comuni.sql` → generates the list of cities.
-   * `update-province.sql` → generates the list of provinces.
+   * `update-comuni.sql` → generates the list of cities (for each city without a corresponding province, the province `EE` (Estero) is added).
+   * `update-province.sql` → generates the list of provinces (an extra entry `EE: Estero` is added as an additional province to handle cases for foreign countries).
 
 2. Execute the queries manually in your Oracle DBMS.
 
