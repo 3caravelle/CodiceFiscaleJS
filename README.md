@@ -7,23 +7,30 @@ Steps to publish:
 
 1. Install dependencies:
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
-2. Update the version in `package.json` to a new, unused version.
+2. Build the project:
+   ```bash
+   npm run build
+   ```
 
-3. Login to your Nexus repository:
+3. Update the version in `package.json` to a new, unused version.
 
-```bash
-npm login --registry=https://nexus.3caravelle.net/repository/npm-releases/
-```
+4. Login to your Nexus repository:
 
-4. Publish the package:
+   ```bash
+   npm login --registry=https://nexus.3caravelle.net/repository/npm-releases/
+   ```
 
-```bash
-npm publish --registry=https://nexus.3caravelle.net/repository/npm-releases/
-```
+5. Publish the package:
+
+   ```bash
+   npm publish --registry=https://nexus.3caravelle.net/repository/npm-releases/
+   ```
+
+6. Update the version in `package.json` where the package is used.
 
 ## Updating Library Data
 
